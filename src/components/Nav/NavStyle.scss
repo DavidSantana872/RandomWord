@@ -1,0 +1,62 @@
+@import './../../index.scss';
+nav{
+    width: $widthBox;
+    margin-top: $marginTopGeneral;
+    padding: 0px;
+    @include Aparicion;
+}
+ul{
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    display: flex;
+    margin: 0px;
+}
+.btActionNav{
+    display: flex;
+    flex-direction: row;
+}
+.titleNav{
+    padding: 0px;
+    height: 100%;
+    width: 9rem;
+    display: flex;
+    flex-direction: column;
+    .mainTitle{
+        font-size: $sizeWord3;
+        margin: 0px;
+        padding: 0px;
+        height: 60%;
+        .DadoImg{
+            width: 0.7rem;
+            height: 1rem;
+        }
+    }
+    .Mode{
+        width: 7.875rem;
+        height: 0.875rem;
+        border-radius: 0.625rem;
+        border: 1px solid $MainColor;
+        background: $secundaryColor5;
+        color: $MainColor;
+        
+        font-weight: $weightWord1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .Modeletters{
+            margin-left: 5px;
+            font-size: $sizeWord1;
+        }
+        svg{
+            margin-right: 5px;
+        }
+    }
+}

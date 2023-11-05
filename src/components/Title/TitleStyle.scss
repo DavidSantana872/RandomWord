@@ -1,0 +1,18 @@
+@import './../../index.scss';
+
+.mainTitle{
+    color: $secundaryColor4;
+    font-size: $sizeWord4;
+    font-weight: $weightWord2;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    width: 100%;
+}
+.DadoImg{
+    height: 1.75rem;
+    width: 1.6875rem; 
+}

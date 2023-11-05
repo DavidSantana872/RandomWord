@@ -1,0 +1,93 @@
+@import './../../index.scss';
+.configGameSection{
+    width: $widthBox;
+    background-color: $secundaryColor6;
+    @include JustificarCentroColumnas;
+    @include Aparicion;
+    margin-top: $marginTopBox;
+    border-radius: $sizeBorderRadius;
+}
+.title{
+    color: $secundaryColor4;
+    font-size: $sizeWord3;
+    font-weight: 600;
+    text-align: center;
+    margin-top: $marginTopGeneral;
+}
+.centerBox{
+    @include JustificarCentroColumnas;
+}
+.buttonDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin: 10px;
+    margin-top: $marginTopGeneral;
+
+    width: 7.875rem;
+    height: 2.6875rem; 
+    background-color: $secundaryColor5;
+    border-radius: $sizeBorderRadius;
+    .title{
+        padding: 0px;
+        height: 100%;
+        font-size: 2rem;
+        margin-top: 0px;
+    }
+}
+
+.btn{
+    height: 100%;
+    width: 30%;
+    color: $MainColor;
+    font-size: 2.18rem;
+    text-align: center;
+    display: flex;
+    padding: 0px;
+    background-color: $secundaryColor5;
+    border: solid 1px $secundaryColor5;
+    
+}
+.btn:active{
+    @include golpeAnimation;
+}
+.btn > p{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+
+}
+.btnIzquierda{
+    border-radius: $sizeBorderRadius 0px 0px $sizeBorderRadius;
+    justify-content: right;
+   
+}
+.btnDerecha{
+    justify-content: left;
+    border-radius: 0px $sizeBorderRadius $sizeBorderRadius 0px;
+}
+.btnDerecha:active{
+    border-right: solid 1px $MainColor;
+    border-top: solid 1px $MainColor;
+    border-bottom: solid 1px $MainColor;
+}
+.btnIzquierda:active{
+    border-left: solid 1px $MainColor;
+    border-top: solid 1px $MainColor;
+    border-bottom: solid 1px $MainColor;
+}
+.ssegundos{
+    font-size: 20px;
+    font-weight: 400;
+}
+.button{
+    .BtModel2{
+        background-color: $secundaryColor;
+        border: solid 1px $secundaryColor4;
+    }
+    .BtModel2:active{
+        border-color: $MainColor;
+    }
+}

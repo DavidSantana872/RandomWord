@@ -1,0 +1,27 @@
+@import './../../../index.scss';
+
+.BtModel1{
+    color: $secundaryColor4;
+    font-size: $sizeWord3;
+    font-weight: $weightWord2;
+    width: 18.375rem;
+    height: 3.125rem;
+    border-radius: $sizeBorderRadius;
+    border: none;
+    @include alineacionExtremos;
+    background-color: $secundaryColor;
+    margin-bottom: $margenesBotones;
+
+}
+.BtModel1:active:disabled{
+    @include golpeAnimation;
+}
+
+
+.BtPress{
+    color: $secundaryColor;
+    transition: color $timeAnimation ease-in-out;
+    background-color: $MainColor;
+    transition: background-color $timeAnimation ease-in-out;
+    @include AnimacionPalpito;
+}

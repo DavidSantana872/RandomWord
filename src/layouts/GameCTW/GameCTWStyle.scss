@@ -1,0 +1,19 @@
+@import './../../index.scss';
+.boxWord{
+    overflow: scroll;
+}
+.BoxSelect{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+.BoxR{
+    display: flex;
+    max-width: 20rem;
+    flex-wrap: wrap;
+}
+.TituloBoxResult{
+    color: $secundaryColor4;
+    font-weight: $weightWord1;
+    font-size: $sizeWord2;
+}

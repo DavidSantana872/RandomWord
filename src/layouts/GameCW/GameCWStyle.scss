@@ -1,0 +1,61 @@
+@import './../../index.scss';
+.boxWord{
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0%;
+    height: 71%;
+    display: flex;
+    justify-content: start;
+    padding-top: 1rem;
+}
+.Separate{
+    filter: blur(6px);
+    position: relative;
+}
+.Separate2{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0px;
+    text-align: center;
+    left: 0px;
+    background-color: $secundaryColor7;
+    font-weight: $weightWord2;
+    z-index: 1;
+    border-bottom: solid 1px $secundaryColor4;
+    color: $secundaryColor4;
+    text-transform: uppercase;
+    font-size: $sizeWord4;
+}
+.Separate2:focus{
+    outline: none;
+}
+.boxSeparate{
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.inputLetters{
+    display: flex;
+    font-size: $sizeWord4;
+}
+.boxMeaning{
+    padding: 0px;
+    width: $widthBox;
+    display: flex;
+    margin-top: $margenesBotones;
+    justify-content: center;
+}
+.btnM{
+    margin: 4px;
+}
+.Btns{
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,55 @@
+
+@mixin alineacionExtremos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+@mixin JustificarCentroColumnas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin AnimacionPalpito{
+    animation-name: Palpito;
+    animation-duration: $timeAnimation;
+    animation-fill-mode: initial;
+    animation-iteration-count: initial;
+    @keyframes Palpito {
+        from{
+            scale: (1);
+        }
+        to{
+            scale: (1.02);
+        }
+    }
+}
+@mixin golpeAnimation{
+    color: $MainColor;
+    animation-name: golpe;
+    animation-duration: $timeAnimation2;
+    @keyframes golpe {
+        from{
+            rotate: -1deg;
+        }
+        to{
+            rotate: 1deg;
+        }
+    }
+}
+@mixin Aparicion { 
+    animation-name: Aparecer;
+    animation-duration: $timeAnimation;
+    animation-iteration-count: initial;
+    @keyframes Aparecer {
+        from{  
+            scale: 0.5;
+            filter: opacity(0) blur(5px);
+        }
+        to{
+            scale: 1;
+            filter: opacity(1) blur(0px);
+        }
+    }
+}

@@ -1,0 +1,52 @@
+// Font "Fredoka"
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+/*  VARIABLE FONT   */
+$fredokaFont : 'Fredoka', sans-serif;
+$sizeWord0 : 0.3125rem;;
+$sizeWord1 : 0.625rem;
+$sizeWord2 : 0.9375rem;
+$sizeWord3 : 1.25rem;
+$sizeWord4 : 2.5rem;
+
+
+$weightWord1 : 500;
+$weightWord2 : 600;
+
+
+/*  COLORS  */
+$MainColor : #24FF00;
+$secundaryColor : #0F0F0F;
+$secundaryColor1 : #322F2f;
+$secundaryColor2 : #DBFFF0;
+$secundaryColor3 : #DE0000;
+$secundaryColor4 : #F7F7F7;
+$secundaryColor5 : #000000;
+$secundaryColor6 : rgba(255, 255, 255, 0.05);
+$secundaryColor7: rgba(255, 255, 255, 0);/*  TRANSPARENCIAS */
+
+
+$wordBlur : 10px;
+
+/*  Border  */
+$sizeBorderRadius : 1.875rem;
+$sizeBorderRadius2: 0.625rem;
+$borderSize: 1px;
+
+/*  Efect Buttom */
+$blurButtom : 10px;
+
+/* TIME ANIMACIONES*/
+$timeAnimation : 150ms;
+$timeAnimation2: 50ms;
+/* MEDIDAS ELEMENTOS*/
+$sizeWidth1 : 2.5rem;
+$widthBox: 22.375rem;
+
+/*  */
+$marginTopGeneral: 0.75rem;
+$margenesBotones : 1.68rem;
+$marginBoxMaxin : 2rem;
+$marginTopBox : 10.88rem;
+
+$paddingLados: 1rem;

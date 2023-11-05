@@ -1,0 +1,28 @@
+@import './../../index.scss';
+
+.Correcto{
+    color: $MainColor;
+}
+.Erroneo{
+    color: $secundaryColor3;
+}
+.BtnCorrecto{
+    background-color: $MainColor;
+    color: $secundaryColor;
+}
+.BtnErroneo{
+    color: $secundaryColor4;
+    background-color: $secundaryColor3;
+    border: none;
+}
+.PalabraCorrecta{
+    text-align: center;
+    font-size: $sizeWord2;
+    color: $secundaryColor4;
+}
+.Btns{
+    position: relative;
+    width: $widthBox;
+    bottom: 0px;
+
+}

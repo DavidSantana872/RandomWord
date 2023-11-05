@@ -1,0 +1,6 @@
+@import './../../index.scss';
+.mainViewHome{
+    width: max-content;
+    margin-top:  $marginTopBox;
+    @include Aparicion;
+}

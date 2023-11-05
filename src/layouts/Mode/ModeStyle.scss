@@ -1,0 +1,14 @@
+@import './../../index.scss';
+.boxMain{
+    background-color: $secundaryColor6;
+    padding-top: 2.62rem;
+    width: $widthBox;
+    height: 14.63rem;
+    border-radius: $sizeBorderRadius;
+    @include JustificarCentroColumnas;
+    position: relative;
+}
+#mainLogo{
+    position: absolute;
+    top: -3.4rem;
+}

@@ -1,0 +1,139 @@
+@import './../../index.scss';
+
+.ShowWordBox{
+    display: flex;
+    flex-direction: column;
+    margin-top: $marginBoxMaxin;
+    background-color: $secundaryColor6;
+    border-radius:  $sizeBorderRadius $sizeBorderRadius 0px 0px;
+    position: absolute;
+    height: 88%;
+    width: $widthBox;
+    bottom: 0px;
+    overflow-y: scroll;
+    padding-top: 1rem;
+    justify-content: space-between;
+    @include Aparicion;
+}
+.TituloDiv{
+    margin-bottom: 1rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title2{
+    color: $secundaryColor4;
+    font-size: $sizeWord4;
+    font-weight: $weightWord2;
+    text-align: center;
+}
+.boxWords{
+    display: flex;
+    justify-content: left;
+    //cursor: pointer;
+    flex-wrap: wrap;
+    font-size: $sizeWord3;
+    font-weight: $weightWord2;
+    padding: 0px $paddingLados 0px $paddingLados;
+}
+.word{
+    width: min-content;
+    margin-top: 5px;
+    margin: 2px;
+   
+}
+.btnWord{
+    background-color: $secundaryColor7;
+    color: $MainColor;
+    border: solid 1px $MainColor;
+    width:fit-content;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    border-radius: $sizeBorderRadius;
+    position: relative;
+    z-index: 1;
+}
+
+.WordResults{
+    border-radius: 0.875rem;
+    padding-top: 1rem;
+    background-color: $secundaryColor4;
+    max-width: 22rem;
+    min-width: 8.5rem;
+    min-height: 3.6rem;
+    padding-bottom: 0.6rem;
+    position: relative;
+    top: -1.2rem;
+    z-index: 0;
+    display: none;
+    flex-wrap: wrap;
+}
+.ctwReady{
+    width: 20rem;
+    min-height: 3.6rem;
+}
+.selectBtn{
+    color: $secundaryColor;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.13); 
+    display: flex;
+    animation-name: Words;
+    animation-duration: $timeAnimation;
+    animation-iteration-count: initial;
+    
+}
+.selectBtnMain{
+    background-color: $MainColor;
+    color: $secundaryColor;
+    animation-name: MargenesAnimados;
+    animation-duration: $timeAnimation;
+    animation-fill-mode: both;
+
+}
+@keyframes MargenesAnimados {
+    from{
+        margin:  0px;
+    }
+    to{
+        margin-left: 0.6rem;
+        margin-right: 0.6rem;
+    }
+}
+
+@keyframes Words {
+    from{  
+       
+        transform: scaleX(0.5);
+        height: 0rem;
+    }
+    to{
+        transform: scaleX(1);
+        
+    }
+}
+.Result{
+    background-color: $secundaryColor4;
+    width: max-content ;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    padding: 0px 10px 0px 10px;
+    border-radius: $sizeBorderRadius;
+    box-shadow: 0px 4px 10px 0px #00000044; 
+}
+#BtnListo{
+    display: none;
+    justify-content: center;
+    @include Aparicion;
+}
+.btnIcon{
+    display: none;
+    height: 80%;
+    margin-left: 10px;
+
+}

@@ -1,0 +1,16 @@
+@import './../../../index.scss';
+.BtModel2{  
+    width: 12rem;
+    height: 2.625rem; 
+    font-size: $sizeWord3;
+    margin: $margenesBotones;
+    color: $secundaryColor4;
+    background-color: $MainColor;
+    border-radius: $sizeBorderRadius;
+    font-weight: $weightWord2;
+    border: none;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.822);
+}
+.BtModel2:active{
+    @include golpeAnimation;
+}
