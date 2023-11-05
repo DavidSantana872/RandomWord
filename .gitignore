@@ -1,0 +1,28 @@
+# Ignorar la carpeta .cache/
+ .cache/
+
+ # Ignorar archivos .DS_Store
+ .DS_Tienda
+ # Consulte https://help.github.com/articles/ignoring-files/ para obtener más información sobre cómo ignorar archivos.
+
+ # dependencias
+ /módulos_nodo
+ /.pnp
+ .pnp.js
+
+ # prueba
+ /cobertura
+
+ # producción
+ /construir
+
+ # varios
+ .DS_Tienda
+ .env.local
+ .env.desarrollo.local
+ .env.prueba.local
+ .env.producción.local
+
+ npm-debug.log*
+ hilo-debug.log*
+ hilo-error.log* 
